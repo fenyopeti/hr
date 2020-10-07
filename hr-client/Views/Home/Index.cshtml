@@ -1,0 +1,50 @@
+﻿@model List<EmployeeViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "page-item active" : "page-item")">
+                    <a class="page-link" asp-controller="Home" asp-action="Index">All</a>
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Active" ? "page-item active" : "page-item")">
+                    <a class="page-link" asp-controller="Home" asp-action="Active">Active</a>
+                </li>
+                <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Inactive" ? "page-item active" : "page-item")">
+                    <a class="page-link" asp-controller="Home" asp-action="Inactive">Inactive</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Employee Id</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var employee in Model)
+                {
+                    <tr>
+                        <th scope="row">@employee.employeeId</th>
+                        <td>@employee.firstName</td>
+                        <td>@employee.lastName</td>
+                        <td>@(employee.status ? "Active" : "Inactive")</td>
+                        <td>
+                            <form asp-controller="Home" asp-action="ChangeStatus" asp-route-id="@employee.employeeId" asp-route-oldStatus="@employee.status" method="post">
+                                <button class="btn btn-secondary" type="submit">Change status</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>

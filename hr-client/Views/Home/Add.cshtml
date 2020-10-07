@@ -1,0 +1,19 @@
+﻿@model EmployeeViewModel
+
+
+    <form asp-controller="Home" asp-action="Add" method="post">
+        <div class="input-group mb-3">
+            <input asp-for="employeeId" class="form-control" placeholder="Employee ID" aria-label="Employee ID" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <input asp-for="firstName" class="form-control" placeholder="First Name" aria-label="Employee ID" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <input asp-for="lastName" class="form-control" placeholder="Last Name" aria-label="Employee ID" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="status">Status</label>
+            <input asp-for="status" class="form-control" placeholder="Status" aria-label="Employee ID" aria-describedby="basic-addon1">
+        </div>
+        <button type="submit" class="btn btn-secondary">Add new employee</button>
+    </form>

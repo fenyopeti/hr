@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hr-api", "hr-api\hr-api.csproj", "{392F67AE-7D24-4C77-8D09-BC3602752824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hr-api-tests", "hr-api-tests\hr-api-tests.csproj", "{0B0FFD7A-0572-4C14-91A5-E48B9BBF4383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hr-client", "hr-client\hr-client.csproj", "{4130A0BB-CE9A-40A5-B7AE-72DBA5096333}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{392F67AE-7D24-4C77-8D09-BC3602752824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{392F67AE-7D24-4C77-8D09-BC3602752824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{392F67AE-7D24-4C77-8D09-BC3602752824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{392F67AE-7D24-4C77-8D09-BC3602752824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0FFD7A-0572-4C14-91A5-E48B9BBF4383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0FFD7A-0572-4C14-91A5-E48B9BBF4383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0FFD7A-0572-4C14-91A5-E48B9BBF4383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0FFD7A-0572-4C14-91A5-E48B9BBF4383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4130A0BB-CE9A-40A5-B7AE-72DBA5096333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4130A0BB-CE9A-40A5-B7AE-72DBA5096333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4130A0BB-CE9A-40A5-B7AE-72DBA5096333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4130A0BB-CE9A-40A5-B7AE-72DBA5096333}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
