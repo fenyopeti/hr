@@ -18,6 +18,11 @@ namespace hr_client.Services
             _client = _clientFactory.CreateClient("hr-api");
         }
 
+        public EmployeesService(HttpClient client)
+        {
+            _client = client;
+        }
+
         public async Task<IEnumerable<EmployeeViewModel>> GetAll()
         {
             var response = await _client.GetAsync("employees");

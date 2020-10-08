@@ -9,12 +9,10 @@ namespace hr_client.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly IEmployeesService _employeesService;
 
-        public HomeController(ILogger<HomeController> logger, IEmployeesService employeesService)
+        public HomeController(IEmployeesService employeesService)
         {
-            _logger = logger;
             _employeesService = employeesService;
         }
 
